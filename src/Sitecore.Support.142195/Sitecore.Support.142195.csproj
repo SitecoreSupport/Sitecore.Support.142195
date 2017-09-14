@@ -54,7 +54,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.142195.config" />
     <Content Include="sitecore\shell\client\Services\Assets\lib\beaconApi.js" />
     <Content Include="sitecore\shell\client\Services\Assets\lib\beaconApi.min.js" />
   </ItemGroup>
