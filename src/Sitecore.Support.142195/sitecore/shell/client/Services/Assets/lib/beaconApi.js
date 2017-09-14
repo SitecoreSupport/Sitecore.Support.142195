@@ -6019,10 +6019,12 @@ var api = function (endpoint) {
   var insertBefore = function (element, newNode, existingNode) {
     element.insertBefore(newNode, existingNode);
     try {
-      var jsScripts = element.getElementsByTagName("script");
-      if (jsScripts.src) {
+      // Sitecore.Support.142195 start
+      var jsScripts = newNode.getElementsByTagName("script");
+      if (jsScripts.length) {
         addScriptSync(jsScripts, 0);
       }
+      // Sitecore.Support.142195 end
     } catch (err) {
       console.error(err);
     }
